@@ -3,33 +3,71 @@
         <title>Primeiro Projeto Django</title>
         <style>
             body{
-                background-color: black;
+                background-color: rgb(20, 20, 20);
             }
            
-        a{
+            a{
             color:white ;
-        }    
+            }    
         
             div{
-                color: rgb(45, 46, 46);
+                color: rgb(81, 82, 82);
+            }
+
+            h1{
+                color: wheat;
+                text-align: center;
+                margin: 30px;
+                
+            }
+
+            main{
+                background-color: black;
+                max-width: 600px;
+                min-width: 320px;
+                padding: 20px;
+                margin: auto;
+                border-radius: 10px;
+            }  
+            div > p{
+                color: chocolate;
+            }
+            #amarelo{
+                font-size: 1.1em;
+                color: rgb(236, 155, 34);
+            }
+            #branco{
+                color: white;
             }
         </style>
     </head>
     <body>
-        <div class="pos">
-            <h1><a href="/">Blog Django Girls</a></h1>
-        </div>
+        <h1>Aprendendo a fazer integração front + backend: </h1>
+        <main>
+            <div class="pos">
+                <h2><a href="/">Blog Django Girls</a></h2>
+                <h3 id="amarelo">Até aqui aprendi a inserir os arquivos de um site em um projeto Django, criando od diretórios e depois fazendo deploy para colocá-lo no ar! As modificações na estrutura até agora são testes por minha conta!
+                    Assim estou praticando o <b>CSS</b>, o <b>versionamento</b> e o <b>deploy</b>.
+                </h3>
+                <p id="branco">publicado: 01.09.2023, 15:31</p>
+            </div>
 
-        <div class="pos">
-            <p>publicado: 01.09.2023, 15:59</p>
-            <h2><a href="">Meu primeiro post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, velit beatae, temporibus dicta in omnis nobis pariatur iure nostrum perferendis cupiditate molestiae. Voluptas doloremque accusantium quam dolore nisi atque consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, id sint adipisci mollitia sequi eaque officia iure dolorum corrupti unde suscipit omnis dignissimos officiis deleniti, voluptatum labore! Nam, aliquid modi.</p>
-        </div>
+            <div >
+                
+                <h2><a href="">Meu primeiro post</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, velit beatae, temporibus dicta in omnis nobis pariatur iure nostrum perferendis cupiditate molestiae. Voluptas doloremque accusantium quam dolore nisi atque consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, id sint adipisci mollitia sequi eaque officia iure dolorum corrupti unde suscipit omnis dignissimos officiis deleniti, voluptatum labore! Nam, aliquid modi.</p>
+            </div>
 
-        <div class="pos">
-            <p>publicado: 01.09.2023, 16:00</p>
-            <h2><a href="">Meu segundo post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+            <div class="pos">
+                <p>publicado: 01.09.2023, 16:00</p>
+                <h2><a href="">Meu segundo post</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum neque nobis. Corrupti cupiditate beatae eum eius praesentium natus ut velit sit suscipit iure sed animi perspiciatis atque, temporibus magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ex velit numquam temporibus! Debitis voluptate blanditiis ipsam, minus inventore soluta ad similique officia dignissimos pariatur suscipit maxime unde accusantium!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium rerum vero optio necessitatibus tempora officia quidem autem quasi maiores deserunt tempore, alias eveniet fugiat in expedita nostrum porro inventore hic.lorem</p>
+            </div>
+            <div class="pos">
+                <p>publicado: 01.09.2023, 16:00</p>
+                <h2><a href="">Meu terceiro post</a></h2>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum neque nobis. Corrupti cupiditate beatae eum eius praesentium natus ut velit sit suscipit iure sed animi perspiciatis atque, temporibus magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ex velit numquam temporibus! Debitis voluptate blanditiis ipsam, minus inventore soluta ad similique officia dignissimos pariatur suscipit maxime unde accusantium!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium rerum vero optio necessitatibus tempora officia quidem autem quasi maiores deserunt tempore, alias eveniet fugiat in expedita nostrum porro inventore hic.lorem Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum neque nobis. Corrupti cupiditate beatae eum eius praesentium natus ut velit sit suscipit iure sed animi perspiciatis atque, temporibus magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ex velit numquam temporibus! Debitis voluptate blanditiis ipsam, minus inventore soluta ad similique officia dignissimos pariatur suscipit maxime unde accusantium!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium rerum vero optio necessitatibus tempora officia quidem autem quasi maiores deserunt tempore, alias eveniet fugiat in expedita nostrum porro inventore hic.lorem</p>
+            </div>
+        </main>
     </body>
 </html>
