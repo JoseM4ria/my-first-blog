@@ -1,67 +1,13 @@
-<html>
-    <head>
-        <title>Primeiro Projeto Django</title>
-        <style>
-            body{
-                background-color: rgb(20, 20, 20);
-            }
-           
-            a{
-            color:white ;
-            }    
-        
-            div{
-                color: rgb(81, 82, 82);
-            }
+{% extends 'blog/base.html' %}
 
-            h1{
-                color: wheat;
-                text-align: center;
-                margin: 30px;
-                
-            }
-
-            main{
-                background-color: black;
-                max-width: 600px;
-                min-width: 320px;
-                padding: 20px;
-                margin: auto;
-                border-radius: 10px;
-            }  
-            div > p{
-                color: chocolate;
-            }
-            #amarelo{
-                font-size: 1.1em;
-                color: rgb(236, 155, 34);
-            }
-            #branco{
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Aprendendo a fazer integração front + backend: </h1>
-        <main>
-            
-            <div class="pos">
-                <h2><a href="/">Blog Django Girls</a></h2>
-                <h3 id="amarelo">Até aqui aprendi a inserir os arquivos de um site em um projeto Django, criando os diretórios e depois fazendo deploy para colocá-lo no ar! As modificações na estrutura até agora são testes por minha conta!
-                    Assim estou praticando o <b>CSS</b>, o <b>versionamento</b> e o <b>deploy</b>.
-                </h3>
-                <p id="branco">publicado: 01.09.2023, 15:31</p>
-
-                <h3 id="amarelo"> Adicionando esta nova linha para me certificar se consegui fazer o deploy do meu site depois de ter mudado de PC. SE VOCÊ ESTÁ LENDO ISSO É PORQUE EU CONSEGUI! </h3>
-                <p id="branco">publicado: 06.09.2023, 16:37</p>
-            </div>
-        {% for post in posts %}
-            <div>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
                 <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
             </div>
-        {% endfor %}
-        </main>
-    </body>
-</html>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
